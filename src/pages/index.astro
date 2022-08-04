@@ -2,218 +2,124 @@
 import Layout from "../layouts/Layout.astro";
 // import ArticleTile from "../components/ArticleTile.astro";
 // import articles from "../content/articles";
+
 ---
 
-<Layout title="Defend the Atlanta Forest">
-  <header class="my6 sm:mt-12 sm:mb-16 px-6 sm:px-20">
-    <h1 class="font-inter font-black uppercase text-6xl leading-tight">
-      Defend the Atlanta Forest
-    </h1>
-    <p class="font-cabin text-2xl">
-      an autonomous movement for the future of South Atlanta
-    </p>
-    <nav
-      class="font-inter uppercase font-black text-2xl border-b border-b-black py-4 flex flex-wrap"
-    >
-      <a href="/" class="hover:underline underline-offset-2 mr-6">Home</a>
-      <a href="/blog" class="hover:underline underline-offset-2 mr-6">Blog</a>
-      <a href="/library" class="hover:underline underline-offset-2 mr-6"
-        >Library
-      </a>
-      <a href="/faq" class="hover:underline underline-offset-2 mr-6">FAQ</a>
-    </nav>
+<Layout title="New F4L site">
+  <!-- Top Navbar -->
+  <div class=" flex sticky top-0 p-6 bg-teal-600"> 
+    <h1 class="w-1/2 uppercase font-bold text-5xl">Atlanta Survival</h1>
+    <ul class="w-1/2 text-right text-2xl uppercase font-bold ">
+      <li class=" inline-block"><a href="/" class="p-4 hover:underline">Home</a></li>
+      <li class=" inline-block"><a href="/about" class="p-4 hover:underline">About</a></li>
+      <li class=" inline-block"><a href="/updates" class="p-4 hover:underline">Updates</a></li>
+      <!--<li class=" inline-block"><a href="/partners" class="p-4 hover:underline">Related projects</a></li>-->
+      <li class=" inline-block"><a href="/contact" class="p-4 hover:underline">Contact</a></li>
+    </ul>
+  </div>
+  <header>
+    <!-- Logo -->
+    <div class="flex">
+      <div class="flex-1 ">&nbsp;</div>
+      <div class="flex-5"><img class=" p-8" src="https://atlsurvival.org/food/img/profile.png"> </div>
+      <div class="flex-1 ">&nbsp;</div>
+    </div>
+    <!-- Buttons -->
+    <div class=" flex sm:gap-3 justify-center text-2xl uppercase" >
+      <a href="https://airtable.com/shrY151RWK9aBJBkF" class="flex-1 text-center sm:m-3 font-bold text-white bg-teal-700 hover:text-black hover:text-3xl hover:bg-slate-300 rounded-lg p-4 shadow-md border-solid	border-2 border-gray-700 hover:underline underline-offset-2">Volunteer</a>
+      <a href="https://airtable.com/shrBg3BzmxqI4yvyp?prefill_Food%20Restrictions%3F=No,%20anything%20is%20fine" class="flex-1 text-center sm:m-3 font-bold text-white bg-teal-700 hover:text-black hover:text-3xl hover:bg-slate-300 rounded-lg p-4 shadow-md border-solid	border-2 border-gray-700 hover:underline underline-offset-2">Request&nbsp;deliveries</a>
+      <a href="https://opencollective.com/food4life" class="flex-1 text-center sm:m-3 font-bold text-white bg-teal-700 hover:text-black hover:text-3xl hover:bg-slate-300 rounded-lg p-4 shadow-md border-solid	border-2 border-gray-700 hover:underline underline-offset-2">Donate</a>
+    </div>
   </header>
   <main>
-    <!-- INTRO -->
-    <section>
-      <img
-        src="https://i0.wp.com/defendtheatlantaforest.org/wp-content/uploads/2022/05/IMG_6642.jpg"
-        alt="A treehouse in the forest"
-        class="saturate-0 mix-blend-multiply"
-      />
-      <div class="border-2 border-black m-4 sm:m-20 p-6">
-        <h2 class="font-black uppercase text-2xl mb-4">
-          Atlanta is a city in the forest
-        </h2>
-        <p>
-          We have the highest percentage of tree canopy of any major
-          metropolitan area in America. Our canopy is the main factor in
-          ensuring Atlanta&rsquo;s resiliency in the face of climate change. The
-          forest in Southeast Atlanta is home to wetlands that filter rainwater
-          and prevent flooding. It is also one of the last breeding grounds for
-          many amphibians in the region, as well as an important migration site
-          for wading birds.
-        </p>
 
-        <p>
-          The history of this particular land is deeply scarred. In the 1800s
-          shortly after the land was stolen from Muscogee Creek peoples, it was
-          used as a plantation. In the early 1900s, a prison farm was opened
-          where inmates were forced to perform unpaid agricultural labor,
-          marking the rebranding of slavery into for profit prison labor. The
-          Atlanta Police Department currently uses this hallowed ground as a
-          firing range.
-        </p>
-
-        <p>
-          This forest is at risk of destruction as the police and Hollywood make
-          plans to pave over Atlanta&rsquo;s largest remaining green space.
-        </p>
-
-        <p>
-          The Atlanta Police Department seeks to turn 300 acres of forest into a
-          tactical training compound featuring a mock city. This project was
-          announced to the shock of community members who had been given no
-          opportunity to weigh in on the proposal. The entire process has been
-          shadier than the forest itself.
-        </p>
-
-        <p>
-          Intrenchment Creek is an existing public park adjacent to the Prison
-          Farm. Dekalb County seeks to swap this land with Blackhall Studios
-          (now rebranded as “Shadowbox Studios”), a major film production
-          company. Blackhall wants to clear cut 170 acres of forest to develop
-          into an airport and erect the largest sound stage in America. This
-          project would cement Atlanta as the new Hollywood, making the cost of
-          living in our city outrageous.
-        </p>
-
-        <p>
-          We refuse to let our forest be bulldozed in favor of the police and
-          sold out to Hollywood. There are many forms of action and advocacy to
-          be taken. This is a broad, decentralized, autonomous movement. Get
-          involved in whatever ways move you. Take a walk in the forest with
-          your friends.
+    <!-- pix with descriptions -->
+    <h2> What we do</h2>
+    <div class=" grid grid-cols-2">
+      <div class="border-solid	border-2 border-gray-700">
+        <img src='file:///home/x/Desktop/DeepMay/deepmay_earthworm/IMG_0210.JPG'/>
+      </div>
+      <div class="border-solid	border-2 border-gray-700">
+        <h3> Free grocery giveaways</h3>
+        <p >Free food for whoever shows up. <br>
+          No questions asked, no one turned away. <br>
+          Five weekly locations around Atlanta.<br>
+          Come get food, help out, or both!<br>
+          Just show up:
+          <ul >  
+            <li>Lakewood: Every Saturday 12-2:30, corner of Lakewood and Rhodesia</li>
+            <li>Edgewood: Every Sunday 1-3:00, corner of Mayson and Hardee </li>
+            <li>Clarkston: Every Tuesday 4:30-6, 4540 E Ponce de Leon Ave</li>
+            <li>East Atlanta: Every Wednesday 6:00, ICP trailhead park parking lot</li>
+            <li>Westlake: Every Thursday 2-3:30, 1616 Joseph E Boone </li>
+          </ul>
         </p>
       </div>
-    </section>
-    <!-- LATEST POSTS -->
-    <section class="px-6 sm:px-20">
-      <h2 class="font-black uppercase text-2xl mb-4">Latest posts</h2>
-      <div class="flex flex-col sm:flex-row gap-6">
-        <article class="flex-1 border-t-2 border-black pt-6">
-          <img
-            src="https://i0.wp.com/defendtheatlantaforest.org/wp-content/uploads/2022/07/pedestrian-private-property-1.jpeg"
-            alt=""
-            class="saturate-0 mix-blend-multiply w-full mb-6 object-cover h-52"
-          />
-          <h3 class="font-black text-xl mb-4">
-            Press release: July 20 Press Conference Will Address Illegal Closure
-            of Dekalb County Park
-          </h3>
-          <p>
-            July 20 Press Conference Will Address Illegal Closure of Dekalb
-            County Park A press conference will be held at the South River Trail
-            Intrenchment Creek Park trailhead on West Side Place on Wednesday,
-            July 20, at 4 pm. The conference is being organized by Dekalb
-            community residents in response to the placement of concrete
-            barriers […]
-          </p>
-        </article>
-        <article class="flex-1 border-t-2 border-black pt-6">
-          <img
-            src="https://i0.wp.com/defendtheatlantaforest.org/wp-content/uploads/2022/06/TREESIT.jpg"
-            alt=""
-            class="saturate-0 mix-blend-multiply w-full mb-6 object-cover h-52"
-          />
-          <h3 class="font-black text-xl mb-4">
-            Press release: As public opposition grows, Atlanta police attempt to
-            begin work on Cop City, protestors occupy trees
-          </h3>
-          <p>
-            As of June 1, Atlanta Police have accompanied contractors Long
-            Engineering, Brasfield & Gorrie and other contracted workers to the
-            woods to attempt to stay on schedule with a forest destruction
-            timeline which sets clearing the forest to begin by the end of June.
-            Activists on the ground have reported heavy machinery clearing trees
-            along the perimeter of the proposed site, as well as seemingly
-            random tree-felling deeper inside the forest. This work is being
-            conducted without the proper permits from Dekalb County Office of
-            Planning & Sustainability.
-          </p>
-        </article>
-        <article class="flex-1 border-t-2 border-black pt-6">
-          <img
-            src="https://i0.wp.com/defendtheatlantaforest.org/wp-content/uploads/2022/06/tree_of_life1336106656972-4100596355-e1657988584795.jpg"
-            alt=""
-            class="saturate-0 mix-blend-multiply w-full mb-6 object-cover object-top h-52"
-          />
-          <h3 class="font-black text-xl mb-4">
-            Emory doctors condemn Cop City, call to fund public health
-            initiatives instead
-          </h3>
-          <p>
-            As physicians who work in Atlanta and participate within the Georgia
-            Human Rights Clinic, and with experience evaluating asylum seekers
-            and victims of various forms of abuses, we have grave concerns with
-            the establishment of such a facility. We witness the further
-            militarization of police in Atlanta and throughout this country and
-            grow increasingly alarmed. This facility will be one of if not the
-            largest police training facilities in the United States.
-          </p>
-        </article>
-      </div>
-    </section>
-    <!-- FOOTER -->
-    <footer class="px-6 sm:px-20 mt-20">
-      <a
-        href="https://opencollective.com/forest-justice-defense-fund"
-        class="bg-black px-12 py-6 text-white block text-center font-black sm:text-2xl tracking-widest uppercase border-2 border-black transition-colors hover:text-black hover:bg-transparent"
-      >
-        Donate to defend the atlanta forest
-      </a>
-      <div class="my-20 flex justify-center">
-        <a class="text-6xl px-4" href="https://twitter.com/defendATLforest">
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 24 24"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            focusable="false"
-            ><path
-              d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"
-            ></path>
-          </svg>
-          <span class="sr-only">Twitter</span>
-        </a>
-        <a
-          class="text-6xl px-4"
-          href="https://www.instagram.com/defendatlantaforest/?hl=en"
-        >
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 24 24"
-            style="font-size: 1em;"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            focusable="false"
-            ><path
-              d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"
-            ></path>
-          </svg>
-          <span class="sr-only">Instagram</span>
-        </a>
-        <a class="text-6xl px-4" href="">
-          <svg
-            width="1em"
-            style="font-size: 1em;"
-            height="1em"
-            viewBox="0 0 24 24"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            focusable="false"
-            ><path
-              d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"
-            ></path>
-          </svg>
-          <span class="sr-only">Facebook</span>
-        </a>
-      </div>
-    </footer>
+    </div>
+   
+    <!-- Calendar -->
+      <iframe class="airtable-embed" src="https://airtable.com/embed/shrldOMY7Yy3tMvOD?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>      
+      <div >
+        <h2>ABOUT</h2>
+        <h3>Core principles:</h3>
+        <p>Our core ethic calls on us to treat everyone with dignity and respect. 
+          We encourage everyone to help and take food. We do not believe in creating 
+          divisions between "volunteers" and "beneficiaries".</p>
+
+      Bulk food is donated by charities, grocery stores, community groups, and farmers.
+
+      How to get food: Just show up to any of the weekly free grocery giveaways around Atlanta. 
+        No one will demand documents or information or place any expectations on you.
+        Take as much as you need (while respecting the needs of others).  If you would like to donate
+        food or items or volunteer your time, that is very welcome but not required.
+
+        <p> For people who can't come to the grocery giveaways, 
+          deliveries of pre-made grocery boxes happen as our limited volunteer resources permit.
+          <a href="">Sign up</a> to receive deliveries.</p>
+      
+
+      How to volunteer:
+      <a href="https://airtable.com/shrY151RWK9aBJBkF" class=" ">Sign up</a>
+      to get text messages about volunteer opportinities, or just show up to one of the grocery giveaways
+      and talk to the volunteers. See 
+
+      How to donate goods:
+      Bring items to one of the free grocery giveaways, or <a href="">get in touch</a> to arrange a special time to 
+      drop them off.
+
+      History:
+      Food4Life grew out of a project called Food Not Bombs, 
+      when the pandemic hit in 2020 we massively scaled up,
+      Delivering groceries to households impacted by the pandemic or by general economic hardship. 
+      The all-volunteer project made over xxxxxx grocery box deliveries, and is still Delivering
+      on a small scale to those who cannot come to in-person grocery giveaways.
+      
+
+      
   </main>
+  <footer class=" text-center" id="footer">
+    <div class=" p-6 bg-teal-600">
+      <h3>Social Media</h3>
+        <ul class=" ">
+            <li class=" inline-block">
+                <a href="https://www.instagram.com/food4lifeatl/" >ig</a>
+            </li>
+            <li class=" inline-block">
+                <a href="https://twitter.com/Food4LifeAtl">twt</a>
+            </li>
+            <li class=" inline-block">
+                <a href="https://www.facebook.com/pg/Atlanta-Survival-Program-101606221475609">fb</a>
+            </li>
+            <li class=" inline-block">
+                <a href="https://actionnetwork.org/fundraising/support-the-food4life-atlanta-survival-program/">$</a>
+            </li>
+            <li class=" inline-block">
+                <a href="http://foodnotbombsatl.org/food4life-initiative-in-response-to-the-covid-19-crisis/"> fnb</a>
+            </li>
+        </ul>
+    </div>
+    <div class=" p-6 bg-teal-300">
+      We will survive by helping each other
+    </div>
+  </footer>
 </Layout>
