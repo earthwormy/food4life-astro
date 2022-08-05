@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+
+---
+
+<Layout title="New F4L site">
+  <!-- Top Navbar -->
+  <Navbar />
+
+  <!--General signup intro bar -->
+    <div class="text-3xl">
+        To sign up as a volunteer and receive texts and emails about volunteer opportinities, 
+        give us some general info <a href="https://airtable.com/shrY151RWK9aBJBkF" class="text-3xl  text-blue-800 underline font-bold ">here.</a>
+    </div>
+    <div class=" text-3xl">
+        <a href=" https://airtable.com/shrWDwAxT8bUiLawx" class="text-3xl  text-blue-800 underline font-bold ">Fill out the form below</a> 
+        <span class="text-3xl">to volunteer for one or more of the events in the calendar below. </span>
+    </div>
+
+  <!--Calendar intro bar -->
+  <div id="calendar" class=" bg-teal-700 p-4">
+    <span class="uppercase font-bold text-4xl">Calendar</span>
+    <span class="text-3xl">of volunteer opportunities:</span>
+
+  </div>
+  <iframe class="airtable-embed" src="https://airtable.com/embed/shrldOMY7Yy3tMvOD?backgroundColor=teal&viewControls=off" frameborder="0" width="100%" height="900" style="background: transparent; border: 1px solid #ccc;"></iframe>      
+  
+  <!--signup form intro bar -->
+
+
+</Layout>

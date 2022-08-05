@@ -1,23 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-// import ArticleTile from "../components/ArticleTile.astro";
-// import articles from "../content/articles";
+import Navbar from "../components/Navbar.astro";
 
 ---
 
 <Layout title="New F4L site">
   <!-- Top Navbar -->
-  <div class=" flex sticky top-0 p-6 bg-teal-600"> 
-    <h1 class="w-1/2 uppercase font-bold text-5xl">Atlanta Survival</h1>
-    <ul class="w-1/2 text-right text-2xl uppercase font-bold ">
-      <li class=" inline-block"><a href="/" class="p-4 hover:underline">Home</a></li>
-      <li class=" inline-block"><a href="/about" class="p-4 hover:underline">About</a></li>
-      <li class=" inline-block"><a href="/updates" class="p-4 hover:underline">Updates</a></li>
-      <!--<li class=" inline-block"><a href="/partners" class="p-4 hover:underline">Related projects</a></li>-->
-      <li class=" inline-block"><a href="/contact" class="p-4 hover:underline">Contact</a></li>
-    </ul>
-  </div>
-  <header>
+  <Navbar />
+    
+  <header>  
     <!-- Logo -->
     <div class="flex">
       <div class="flex-1 ">&nbsp;</div>
@@ -34,69 +25,73 @@ import Layout from "../layouts/Layout.astro";
   <main>
 
     <!-- pix with descriptions -->
-    <h2> What we do</h2>
-    <div class=" grid grid-cols-2">
-      <div class="border-solid	border-2 border-gray-700">
-        <img src='file:///home/x/Desktop/DeepMay/deepmay_earthworm/IMG_0210.JPG'/>
+    <h2 class="text-6xl font-bold left-5"> What we do</h2>
+      <div class="grid sm:grid-cols-2">
+        <img src='distro.jpg'  class="flex-1 w-full rounded-3xl shadow-xl"/>       
+
+        <div class="px-10" >
+          <h3 class="text-4xl font-bold"> Free grocery giveaways</h3>
+          <div class="text-3xl">
+            <p >Free food for whoever shows up. <br>
+            No questions asked, no one turned away. <br>
+            Five weekly locations around Atlanta.<br>
+            Come get food, help out, or both!<br><br>
+            Just show up:
+              <ul class=" list-disc list-inside marker:text-black">  
+                <li>Lakewood: Every Saturday 12-2:30, corner of Lakewood and Rhodesia</li>
+                <li>Edgewood: Every Sunday 1-3:00, corner of Mayson and Hardee </li>
+                <li>Clarkston: Every Tuesday 4:30-6, 4540 E Ponce de Leon Ave</li>
+                <li>East Atlanta: Every Wednesday 6:00, ICP trailhead park parking lot</li>
+                <li>Westlake: Every Thursday 2-3:30, 1616 Joseph E Boone </li>
+              </ul>
+            </p>
+
+          <h3 class="text-4xl font-bold pt-4">How to volunteer:</h3>
+          <p class="text-3xl "><a href="/signup" class=" text-blue-800 underline">Sign up</a>
+            to get text messages about volunteer opportinities, or just show up to one of the grocery giveaways
+            and talk to the volunteers. See <a class=" text-blue-800 underline" href="#calendar">the calendar below</a> for events you can show up to. 
+            
+            <h3 class="text-4xl font-bold pt-4">How to donate goods:</h3>
+            <p class="text-3xl">Bring items to one of the free grocery giveaways, 
+              or <a href="/contact" class=" text-blue-800 underline">get in touch</a> 
+              to arrange a special time to 
+              drop them off.
+            </p> 
+          </p>
+          </div>
+        </div>
+
+        <div class=" p-10">
+          <h3 class="text-4xl font-bold"> How to get food:</h3> 
+          <div class="text-3xl">
+            <p>Just show up to any of the weekly free grocery giveaways around Atlanta. 
+              No one will demand documents or information or place any expectations on you.
+              Take as much as you need (while respecting the needs of others).  If you would like to donate
+              food or items or volunteer your time, that is very welcome but not required.
+            </p>
+            <p  class=" pb-10 pt-4"> For people who can't come to the grocery giveaways, 
+              deliveries of pre-made grocery boxes happen as our limited volunteer resources permit.
+              <a href="https://airtable.com/shrBg3BzmxqI4yvyp?prefill_Food%20Restrictions%3F=No,%20anything%20is%20fine" class=" text-blue-800 underline">Sign up</a> to receive deliveries.</p>
+                <img src='2020-05-28 17.42.21.jpg'  class=" m-auto w-8/9 rounded-3xl shadow-2xl"/>  
+          </div>
+        </div>
+        <div>
+          <img src='fnb.JPG' class="m-auto -top-6 rounded-3xl shadow-xl "/>   
+        </div>    
       </div>
-      <div class="border-solid	border-2 border-gray-700">
-        <h3> Free grocery giveaways</h3>
-        <p >Free food for whoever shows up. <br>
-          No questions asked, no one turned away. <br>
-          Five weekly locations around Atlanta.<br>
-          Come get food, help out, or both!<br>
-          Just show up:
-          <ul >  
-            <li>Lakewood: Every Saturday 12-2:30, corner of Lakewood and Rhodesia</li>
-            <li>Edgewood: Every Sunday 1-3:00, corner of Mayson and Hardee </li>
-            <li>Clarkston: Every Tuesday 4:30-6, 4540 E Ponce de Leon Ave</li>
-            <li>East Atlanta: Every Wednesday 6:00, ICP trailhead park parking lot</li>
-            <li>Westlake: Every Thursday 2-3:30, 1616 Joseph E Boone </li>
-          </ul>
-        </p>
-      </div>
+
+  <!-- Calendar -->
+  <div id="calendar" class=" bg-teal-700 p-4">
+    <span class="uppercase font-bold text-4xl">Calendar</span>
+    <span class="text-3xl">of Food4Life events:</span>
+    <div class="float-right">
+      <a href="/signup" class="text-3xl  text-blue-800 underline font-bold ">Sign up here</a> 
+      <span class="text-3xl">to volunteer for any of these. </span>
     </div>
-   
-    <!-- Calendar -->
-      <iframe class="airtable-embed" src="https://airtable.com/embed/shrldOMY7Yy3tMvOD?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>      
-      <div >
-        <h2>ABOUT</h2>
-        <h3>Core principles:</h3>
-        <p>Our core ethic calls on us to treat everyone with dignity and respect. 
-          We encourage everyone to help and take food. We do not believe in creating 
-          divisions between "volunteers" and "beneficiaries".</p>
-
-      Bulk food is donated by charities, grocery stores, community groups, and farmers.
-
-      How to get food: Just show up to any of the weekly free grocery giveaways around Atlanta. 
-        No one will demand documents or information or place any expectations on you.
-        Take as much as you need (while respecting the needs of others).  If you would like to donate
-        food or items or volunteer your time, that is very welcome but not required.
-
-        <p> For people who can't come to the grocery giveaways, 
-          deliveries of pre-made grocery boxes happen as our limited volunteer resources permit.
-          <a href="">Sign up</a> to receive deliveries.</p>
-      
-
-      How to volunteer:
-      <a href="https://airtable.com/shrY151RWK9aBJBkF" class=" ">Sign up</a>
-      to get text messages about volunteer opportinities, or just show up to one of the grocery giveaways
-      and talk to the volunteers. See 
-
-      How to donate goods:
-      Bring items to one of the free grocery giveaways, or <a href="">get in touch</a> to arrange a special time to 
-      drop them off.
-
-      History:
-      Food4Life grew out of a project called Food Not Bombs, 
-      when the pandemic hit in 2020 we massively scaled up,
-      Delivering groceries to households impacted by the pandemic or by general economic hardship. 
-      The all-volunteer project made over xxxxxx grocery box deliveries, and is still Delivering
-      on a small scale to those who cannot come to in-person grocery giveaways.
-      
-
-      
+  </div>
+  <iframe class="airtable-embed" src="https://airtable.com/embed/shrOgmUGeb1CloGjP?backgroundColor=teal&viewControls=off" frameborder="0" width="100%" height="900" style="background: transparent; border: 1px solid #ccc;"></iframe>      
   </main>
+  <!-- Footer -->
   <footer class=" text-center" id="footer">
     <div class=" p-6 bg-teal-600">
       <h3>Social Media</h3>
