@@ -13,7 +13,8 @@ import Footer from "../components/Footer.astro";
     <!-- Logo -->
     <div class="flex">
       <div class=" flex-1 ">&nbsp;</div>
-      <div class=" flex-3"><img class=" p-8" src="https://atlsurvival.org/food/img/profile.png"> </div>
+      <div class=" flex-3"><img class=" p-8" 
+        src="https://atlsurvival.org/food/img/profile.png"> </div>
       <div class=" flex-1">&nbsp;</div>
     </div>
       <div class=" text-center ">
@@ -26,31 +27,34 @@ import Footer from "../components/Footer.astro";
   </header>
   
   <main>
-  <!-- pix with descriptions -->
-  <div class="m-auto text-center sm:w-3/4">
-    <img src='distro.jpg'  class="flex-1 w-full rounded-3xl shadow-xl"/>       
-
-    <div class="px-10" >
-      
-      <h3 class="text-4xl font-bold pt-4">How to volunteer:</h3>
-      <p class="text-3xl "><a href="/signup" class=" text-amber-800 underline">Sign up</a>
-        to get text messages about volunteer opportinities, or sign up for or just show up 
-        to one of the grocery giveaways and talk to the volunteers. See 
-        <a class=" text-amber-800 underline" href="#calendar">the calendar below</a> 
-        for events you can show up to. 
+    <div class="flex">
+        <div class=" flex-1 ">&nbsp;</div>
+        <img src='distro.jpg'  class="m:auto sm:w-11/12 rounded-xl shadow-xl"/>    
+        <div class=" flex-1">&nbsp;</div>
+    </div>   
+    <div class="m-auto sm:w-3/4">
+      <div class="px-10" >
         
-        <h3 class="text-4xl font-bold pt-4">How to donate goods:</h3>
-        <p class="text-3xl">Bring items to one of the free grocery giveaways, 
+        <h3 class=" text-4xl pt-7 pb-4 font-bold">How to volunteer:</h3>
+        
+        <p class="text-3xl leading-normal "><a href="/signup" class=" text-amber-800 underline">Sign up</a>
+          to get text messages about volunteer opportinities, or sign up for or just show up 
+          to one of the grocery giveaways and talk to the volunteers. See 
+          <a class=" text-amber-800 underline" href="#calendar">the calendar below</a> 
+          for events you can show up to. 
+        </p>
+        
+        <h3 class="text-4xl pt-7 pb-4 font-bold">How to donate goods:</h3>
+        
+        <p class="text-3xl leading-normal">Bring items to one of the free grocery giveaways, 
           or <a href="/contact" class=" text-amber-800 underline">get in touch</a> 
           to arrange a special time to 
           drop them off.
         </p> 
-      </p>
-    </div>
-
-    <div class=" p-10">
-      <h3 class="text-4xl font-bold"> How to get food:</h3> 
-      <div class="text-3xl">
+        
+        <h3 class="text-4xl pt-7 pb-4 font-bold"> How to get food:</h3> 
+      
+        <div class="text-3xl leading-normal">
         <p>Just show up to any of the weekly free grocery giveaways around Atlanta. 
           No one will demand documents or information or place any expectations on you.
           Take as much as you need (while respecting the needs of others).  
@@ -60,8 +64,10 @@ import Footer from "../components/Footer.astro";
         <p  class=" pb-10 pt-4"> For people who can't come to the grocery giveaways, 
           deliveries of pre-made grocery boxes happen as our limited volunteer 
           resources permit.
-          <a href="https://airtable.com/shrBg3BzmxqI4yvyp?prefill_Food%20Restrictions%3F=No,%20anything%20is%20fine" class=" text-amber-800 underline">
-            Sign up</a> to receive deliveries.</p>
+          <a href="https://airtable.com/shrBg3BzmxqI4yvyp?prefill_Food%20Restrictions%3F=No,%20anything%20is%20fine" 
+          class=" font-bold text-amber-800 underline">
+            Sign up</a> to receive deliveries.
+        </p>
       </div>
     </div>
   </div>
@@ -73,16 +79,19 @@ import Footer from "../components/Footer.astro";
       <span class="text-3xl">of food giveaways</span>
     </div>
     <div class="flex-1 text-right">
-      <a href="/signup#signupform" class="text-3xl   text-amber-700 underline font-bold ">Sign up</a> 
+      <a href="/signup#signupform" class="text-3xl   text-amber-700 underline font-bold ">
+        Sign up
+      </a> 
       <span class="text-3xl">to volunteer </span>
     </div>
   </div>
   <iframe class="airtable-embed" src="https://airtable.com/embed/shrSfvLMaLu36rYih?backgroundColor=cyan&&viewControls=off" frameborder="0" width="100%" height="900" style="background: transparent; border: 1px solid #ccc;"></iframe>      
 
   <!-- Buttons -->
-  <div class=" flex sm:gap-3 sm:w-3/4 justify-center text-2xl uppercase m-auto" >
+  <div class=" flex sm:gap-3 sm:w-3/4 justify-center text-2xl uppercase m-auto pt-8" >
     <a href="/signup" class="flex-1 text-center sm:m-3 font-bold text-white bg-stone-700 hover:text-black hover:bg-slate-300 rounded-lg p-4 shadow-md border-solid	border-2 border-gray-700 hover:underline underline-offset-2">Volunteer</a>
-    <a href="https://opencollective.com/food4life" class="flex-1 text-center sm:m-3 font-bold text-white bg-stone-700 hover:text-black hover:bg-slate-300 rounded-lg p-4 shadow-md border-solid	border-2 border-gray-700 hover:underline underline-offset-2">Donate</a>
+    <a href="https://opencollective.com/food4life" 
+    class="flex-1 text-center sm:m-3 font-bold text-white bg-stone-700 hover:text-black hover:bg-slate-300 rounded-lg p-4 shadow-md border-solid	border-2 border-gray-700 hover:underline underline-offset-2">Donate</a>
  
   </div>
 </main>

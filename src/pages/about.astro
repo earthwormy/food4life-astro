@@ -7,30 +7,43 @@ import Footer from "../components/Footer.astro";
 
 <Layout title="New F4L site">
   <!-- Top Navbar -->
-  <Navbar />
+<Navbar />
   
-  <img src='IMG_0210.JPG'  class="flex-1 w-3/4 float-right rounded-3xl shadow-xl"/>
-
-    <h2>Core principles:</h2>
-    <p>We believe food is a human right. 
-        Our core ethic calls on us to treat everyone with 
-        dignity and respect. 
-        We encourage everyone to both take food and help in whatever ways they are able. 
-        We do not believe in creating divisions between "volunteers" and "beneficiaries".
-    </p>
-        
-    <h2>History:</h2>
-    <p>Food4Life grew out of a project called Food Not Bombs, 
-      when the pandemic hit in 2020 we massively scaled up,
-      Delivering groceries to households impacted by the pandemic or by general economic hardship. 
-      The all-volunteer project made over xxxxxx grocery box deliveries, and is still Delivering
-      on a small scale to those who cannot come to in-person grocery giveaways.
-    </p>  
-    
-    <h2>How it works:</h2>
-    <p>
-        Bulk food is donated by charities, grocery stores, community groups, and farmers.
-    </p>
-
+    <div class=" p-2 sm:p-12 m:p-16 m-auto">
+        <div class=" xl:float-right sm:w-1/2">
+            <img src='IMG_0210.JPG'  class="flex-1 rounded-3xl shadow-xl ml-4"/>
+        </div>
+        <h2 class="font-bold text-4xl pt-7 pb-4">
+            Core principles:
+        </h2>
+        <p class=" text-3xl  leading-normal">
+            We believe food is a human right. 
+            Our core ethic calls on us to treat everyone with 
+            dignity and respect. 
+            We encourage everyone to both take food and help in whatever ways they are able. 
+            We do not believe in creating divisions between "volunteers" and "beneficiaries".
+        </p>
+        <h2 class="font-bold text-4xl  pt-7 pb-4">
+            History:
+        </h2>
+        <p  class=" text-3xl leading-normal">
+            Food4Life grew out of a project called Food Not Bombs, 
+            when the pandemic hit in 2020 we massively scaled up,
+            Delivering groceries to households impacted by the pandemic or by general 
+            economic hardship. 
+            The all-volunteer project made over 14,000 grocery box deliveries in 2020 and 2021, 
+            and is still Delivering
+            on a small scale to those who cannot come to in-person grocery giveaways.
+        </p>  
+        <h2 class="font-bold text-4xl  pt-7 pb-4">
+            How it works:
+        </h2>
+        <p  class=" text-3xl leading-normal">
+            Bulk food is donated by charities, grocery stores, community groups, and farmers.
+            Volunteers pick up the donations and bring them to our depot. When it's time to
+            distribute the food, volunteers pick it up and bring it to the giveaway locations. 
+            Dispatchers coordinate the volunteers and give them the information they need. 
+        </p>
+    </div>
 <Footer/>
 </Layout>
