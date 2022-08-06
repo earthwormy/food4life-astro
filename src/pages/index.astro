@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 
 ---
 
@@ -66,12 +67,14 @@ import Navbar from "../components/Navbar.astro";
   </div>
 
   <!-- Calendar -->
-  <div id="calendar" class=" bg-stone-700 p-4 text-white">
-    <span class="uppercase font-bold text-4xl">Calendar</span>
-    <span class="text-3xl">of Food4Life events where you can get food:</span>
-    <div class="float-right">
-      <a href="/signup#signupform" class="text-3xl   text-amber-700 underline font-bold ">Sign up here</a> 
-      <span class="text-3xl">to volunteer for any of these. </span>
+  <div id="calendar" class=" bg-stone-700 p-4 text-white flex">
+    <div class="flex-1">
+      <span class="uppercase font-bold text-4xl pr-4">Calendar</span>
+      <span class="text-3xl">of food giveaways</span>
+    </div>
+    <div class="flex-1 text-right">
+      <a href="/signup#signupform" class="text-3xl   text-amber-700 underline font-bold ">Sign up</a> 
+      <span class="text-3xl">to volunteer </span>
     </div>
   </div>
   <iframe class="airtable-embed" src="https://airtable.com/embed/shrSfvLMaLu36rYih?backgroundColor=cyan&&viewControls=off" frameborder="0" width="100%" height="900" style="background: transparent; border: 1px solid #ccc;"></iframe>      
@@ -83,31 +86,5 @@ import Navbar from "../components/Navbar.astro";
  
   </div>
 </main>
-
-  <!-- Footer -->
-  <footer class=" text-center" id="footer">
-    <div class=" p-6 bg-stone-600">
-      <h3>Social Media</h3>
-        <ul class=" ">
-            <li class=" inline-block">
-                <a href="https://www.instagram.com/food4lifeatl/" >ig</a>
-            </li>
-            <li class=" inline-block">
-                <a href="https://twitter.com/Food4LifeAtl">twt</a>
-            </li>
-            <li class=" inline-block">
-                <a href="https://www.facebook.com/pg/Atlanta-Survival-Program-101606221475609">fb</a>
-            </li>
-            <li class=" inline-block">
-                <a href="https://actionnetwork.org/fundraising/support-the-food4life-atlanta-survival-program/">$</a>
-            </li>
-            <li class=" inline-block">
-                <a href="http://foodnotbombsatl.org/food4life-initiative-in-response-to-the-covid-19-crisis/"> fnb</a>
-            </li>
-        </ul>
-    </div>
-    <div class=" p-6 bg-stone-300">
-      We will survive by helping each other
-    </div>
-  </footer>
+<Footer/>
 </Layout>
